@@ -23,7 +23,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 class OrderServiceTest {
 
     @Autowired OrderService orderService;
-    @Autowired OrderRepository orderRepository;
+    @Autowired
+    OrderRepository orderRepository;
     @Autowired EntityManager em;
 
     @Test

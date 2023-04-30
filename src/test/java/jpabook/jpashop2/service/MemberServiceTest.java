@@ -1,7 +1,7 @@
 package jpabook.jpashop2.service;
 
 import jpabook.jpashop2.domain.Member;
-import jpabook.jpashop2.repository.MemberRepository;
+import jpabook.jpashop2.repository.MemberRepositoryOld;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class MemberServiceTest {
 
     @Autowired MemberService memberService;
-    @Autowired MemberRepository memberRepository;
+    @Autowired
+    MemberRepositoryOld memberRepository;
     @Autowired EntityManager em;
 
     @Test
